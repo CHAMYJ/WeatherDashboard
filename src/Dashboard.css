@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
+  padding: 20px;
+  position: relative;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app__body {
+  display: flex;
+  background: #f5f6fa;
+}
+
+.app__left {
+  flex: 0.7;
+  height: 83vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 5px;
+  background: white;
+}
+
+.app__leftText {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}
+.app__right {
+  height: 85vh;
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  background: #f5f6fa;
+}
+
+.app__right1,
+.app__right2 {
+  height: 40vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  width: 30vw;
+  background: white;
+  text-align: center;
+}
+
+.app__cardRight {
+  height: 85vh;
+}
+
+.app__graph {
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+.app__titleRight {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+
+.app__graphTitle {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .app__body {
+    flex-direction: column;
+  }
+
+  .app__right {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .app__right1,
+  .app__right2 {
+    height: 40vh;
+    width: 45vw;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__titleRight {
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .app__left {
+    overflow-y: hidden;
+    margin: 10px;
+    padding: 5px;
+    width: 93vw;
+  }
+
+  .app {
+    padding: 5px;
+    position: relative;
+  }
+
+  .app__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+}
